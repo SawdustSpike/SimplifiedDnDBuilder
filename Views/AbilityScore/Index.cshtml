@@ -1,0 +1,23 @@
+﻿@model List<AbilityScore>
+
+<h2>Ability Scores</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Abbreviation</th>
+        <th>Description</th>
+        
+    </tr>
+
+    @foreach (var score in @Model)
+    {
+        <tr>
+            <td><a href="/AbilityScore/ViewAbilityScore?index=@score.Abbr">@score.Name</a></td>
+            <td>@score.Abbr</td>
+            <td>@score.Description</td>
+            
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,33 @@
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\appsettings.json
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\Simple DnD Builder.staticwebassets.runtime.json
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\Simple DnD Builder.exe
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\Simple DnD Builder.deps.json
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\Simple DnD Builder.runtimeconfig.json
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\Simple DnD Builder.dll
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\Simple DnD Builder.pdb
+C:\Users\spike\source\repos new\Simple DnD Builder\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.csproj.AssemblyReference.cache
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.AssemblyInfoInputs.cache
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.AssemblyInfo.cs
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.csproj.CoreCompileInputs.cache
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.RazorAssemblyInfo.cache
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.RazorAssemblyInfo.cs
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\staticwebassets\msbuild.Simple DnD Builder.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\staticwebassets\msbuild.build.Simple DnD Builder.props
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Simple DnD Builder.props
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Simple DnD Builder.props
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\scopedcss\bundle\Simple DnD Builder.styles.css
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\scopedcss\projectbundle\Simple DnD Builder.bundle.scp.css
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.csproj.CopyComplete
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.dll
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\refint\Simple DnD Builder.dll
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.pdb
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\Simple DnD Builder.genruntimeconfig.cache
+C:\Users\spike\source\repos new\Simple DnD Builder\obj\Debug\net7.0\ref\Simple DnD Builder.dll
