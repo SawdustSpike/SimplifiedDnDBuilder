@@ -1,0 +1,38 @@
+﻿@using Simple_DnD_Builder.Models.Player;
+@model Player
+
+<h2>@Model.PlayerName @Model.Name</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Race</th>
+        <th>Class</th>
+        <th>Alignment</th>
+
+    </tr>
+
+
+    <tr>
+        <td>@Model.Name</a></td>
+        <td>
+            @(Model.Race == null ?
+                Html.Raw("<a href='/Race/Index'>Choose a Race</a>") :
+                Html.Encode(Model.Race))
+        </td>
+
+        <td>
+            @(Model.CharClass == null ?
+                Html.Raw("<a href='/CharClass/Index'>Choose a Class</a>") :
+                Html.Encode(Model.CharClass))
+        </td>
+
+        <td>
+            @(Model.Alignment == null ?
+                Html.Raw("<a href='/Alignment/Index'>Choose an Alignment</a>") :
+                Html.Encode(Model.Alignment))
+        </td>
+    </tr>
+
+
+</table>
