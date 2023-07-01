@@ -1,0 +1,26 @@
+﻿@using Simple_DnD_Builder.Models.Player;
+@model Player
+
+<h3>Let's get Started</h3>
+@using (Html.BeginForm("CreatePlayer", "Player", "Post"))
+{
+    
+
+    <label asp-for="PlayerName" class="control-label">Your Name</label>
+    <input type="text" name="PlayerName" class="form-control"  />
+
+    <label asp-for="Name" class="control-label">Your Character's Name</label>
+    <input type="text"  name="Name" class="form-control" />
+
+<label asp-for="Gender" class="control-label">Gender</label>
+<div class="form-control">
+    <input type="radio" id="genderfemale" name="Gender" value="Female">
+    <label for="genderfemale">Female</label><br>
+    <input type="radio" id="genderFNC" name="Gender" value="GenderFNC">
+    <label for="genderFNC">Gender Fluid/Nonconforming</label><br>
+    <input type="radio" id="gendermale" name="Gender" value="Male">
+    <label for="gendermale">Male</label>
+</div>
+   
+    <input type="submit" value="Create Character" class="btn btn-primary" />
+}

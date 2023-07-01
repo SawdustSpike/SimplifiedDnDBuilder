@@ -2,9 +2,25 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+<<<<<<< HEAD
 /.vs/Simple DnD Builder/FileContentIndex/3f6e31cb-2f3d-4ef2-afb0-47b3f697d4a8.vsidx
 /.vs/Simple DnD Builder/FileContentIndex/b10d7723-2064-473a-bdb0-0bf3bfb44d22.vsidx
 /.vs/Simple DnD Builder/FileContentIndex/50fc706e-0ea8-4f26-8e0e-77f43add465c.vsidx
 /.vs/Simple DnD Builder/FileContentIndex/c9d2a16d-e8f6-4b61-b3f7-820539e9ad4b.vsidx
 /.vs/Simple DnD Builder/FileContentIndex/14e0db19-b9a1-4b7d-aeeb-1878af71e3b3.vsidx
 /.vs/Simple DnD Builder/v17/.suo
+=======
+/.vs/Simple DnD Builder/FileContentIndex/098ceaaf-715f-4016-ad61-4fbb3872ef97.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/0f7bc4f8-aa13-4da2-a6fa-ff8ae0d0c8b1.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/33a6a5f5-23bb-4c69-889c-9e02b8eb0780.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/75360131-2bba-4bb8-9512-9296f594f9c9.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/7b47e942-8f98-4fc6-93a9-196a3d66bb87.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/be80d6c1-647d-4470-bbe1-c0f1b752d29f.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/9de9ba0d-6607-49d0-b6f7-168704973d61.vsidx
+>>>>>>> CharacterBuilder
+/.vs/Simple DnD Builder/FileContentIndex/26eb0c73-7155-422b-8fa3-76702640bcf2.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/42e3d195-4cea-4188-bd76-69fac960e899.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/92106fa2-9dfe-4701-a3e5-459b7420de46.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/5a451aee-2bc7-4ab3-be93-8fb4b90dc3f7.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/b74d3fb7-361d-41d8-bb73-58bcaa0bb20f.vsidx
+/.vs/Simple DnD Builder/FileContentIndex/596f3eeb-3d98-4797-bb07-c1ba8406b169.vsidx

@@ -1,0 +1,24 @@
+﻿@using Simple_DnD_Builder.Models.Player;
+@model Player
+
+<h2>@Model.Name</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Race</th>
+        <th>Class</th>
+        <th>Alignment</th>
+
+    </tr>
+
+
+    <tr>
+        <td>@Model.Name</a></td>
+        <td>@(@Model.Race.Name.Length == 0) ? <a href=/Race/Index />Choose a Race</a> : @Model.Race</td>
+        <td>@(@Model.CharClass.Name.Length == 0) ? <a href=/CharClass/Index />Choose a Class</a> : @Model.CharClass</td>
+        <td>@(@Model.Alignment.Name.Length == 0) ? <a href=/Alignment/Index />Choose an Alignment</a> : @Model.Race</td>        
+    </tr>
+
+
+</table>

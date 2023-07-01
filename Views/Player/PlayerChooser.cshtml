@@ -1,0 +1,21 @@
+﻿@using Simple_DnD_Builder.Models.Player;
+@model List<Player>
+
+<h2>Choose Your Player</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Player Name</th>
+    </tr>
+
+    @foreach (var player in @Model)
+    {
+        <tr>
+            <td><a href=/player/viewplayer/@player.PlayerName>@player.PlayerName</a></td>
+            <td>@player.Name</td>
+           
+        </tr>
+    }
+
+</table>
