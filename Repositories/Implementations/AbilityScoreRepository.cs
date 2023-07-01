@@ -14,12 +14,12 @@ namespace Simple_DnD_Builder.Repositories.Implementations
         {
             //throw new NotImplementedException();
             var ability = HttpHelper.Helper("ability-scores", index);
-            var descString = ability["desc"].ToString().Replace("[", "").Replace("]", "").Replace("\"", "");
+            var descString = ability["desc"]?.ToString().Replace("[", "").Replace("]", "").Replace("\"", "") ?? "None";
             //var descArray = descString.Split(new[] { '.', '\n' }, StringSplitOptions.RemoveEmptyEntries);
             return new AbilityScore(
-                ability["full_name"].ToString(), 
+                ability["full_name"]?.ToString() ?? "None", 
                 descString, 
-                ability["name"].ToString()
+                ability["name"]?.ToString() ?? "None"
                 );   
         }
 
