@@ -14,11 +14,11 @@ namespace Simple_DnD_Builder.Models.Players
         public string Name { get; set; }
         public string PlayerName { get; set; }
         public string Gender { get; set; }
-        public Race Race { get; set; }
-        public CharClass CharClass { get; set; }
+        public string Race { get; set; }
+        public string CharClass { get; set; }
         public Dictionary<string, int> AbilityScores { get; set; } = new Dictionary<string, int>();
-        public Alignment Alignment { get; set; }
-        public List<Language> Languages { get; set; }
+        public string Alignment { get; set; }
+        public List<string> Languages { get; set; }
         public Dictionary<string, int> SkillScores { get; set; } = new Dictionary<string, int>();
         public string ImageURL { get; set; }
 

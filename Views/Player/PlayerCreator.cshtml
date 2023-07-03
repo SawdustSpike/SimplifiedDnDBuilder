@@ -1,7 +1,11 @@
 ﻿@using Simple_DnD_Builder.Models.Players;
 @model Player
 
-<h3>Let's get Started</h3>
+<h3>
+    @(Model.Name == null ?
+        "Let's Get Started" :
+        "Edit Your Character")
+</h3>
 @using (Html.BeginForm("CreatePlayer", "Player", "Post"))
 {
     

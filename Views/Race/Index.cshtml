@@ -1,1 +1,29 @@
-﻿
+﻿@using Simple_DnD_Builder.Models.Races;
+@model List<Race>
+
+<h2>Choose a Race</h2>
+@using (Html.BeginForm("AddRace", "Race", FormMethod.Post))
+{
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Speed</th>
+            <th>Alignment</th>
+            <th>Age</th>
+            <th>Size</th>
+        </tr>
+
+        @foreach (var race in Model)
+        {
+            <tr>
+                <td><a href="/Race/ViewRace?index=@race.Name">@race.Name</a></td>
+                <td>@race.Speed</td>
+                <td>@race.Alignment</td>
+                <td>@race.Age</td>
+                <td>@race.Size</td>
+                <td><input type="radio" name="selectedRace" value="@race.Name"></td>
+            </tr>
+        }
+    </table>
+    <button type="submit">Add Selected Race</button>
+}
