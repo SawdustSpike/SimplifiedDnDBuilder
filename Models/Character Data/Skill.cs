@@ -4,6 +4,29 @@ namespace Simple_DnD_Builder.Models
 {
     public class Skill
     {
+        static public readonly List<string> Skills = new List<string>()
+        {
+             
+"acrobatics",
+"animal-handling",
+"arcana",
+"athletics",
+"deception",
+"history",
+"insight",
+"intimidation",
+"investigation",
+"medicine",
+"nature",
+"perception",
+"performance",
+"persuasion",
+"religion",
+"sleight-of-hand",
+"stealth",
+"survival"
+            
+    };
         public Skill(string name, string desc, AbilityScore ability)
         {
             Name = name;
@@ -18,5 +41,9 @@ namespace Simple_DnD_Builder.Models
         public string Name { get; set; }
         public string Desc { get; set; }
         public AbilityScore Ability { get; set; }
+
+       
     }
+
 }
+

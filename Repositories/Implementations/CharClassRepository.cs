@@ -8,21 +8,8 @@ namespace Simple_DnD_Builder.Repositories.Implementations
     {
         public List<CharClass> GetAllCharClass()
         {
-            var classes = new List<CharClass>();
-            var classs = new string[] {
-                "barbarian",
-                "bard",
-                "cleric",
-                "druid",
-                "fighter",
-                "monk",
-                "paladin",
-                "ranger",
-                "rogue",
-                "sorcerer",
-                "warlock",
-                "wizard"};
-            foreach(var a  in classs)
+            var classes = new List<CharClass>();           
+            foreach(var a  in CharClass.Classs)
             {
                 classes.Add(GetCharClassByIndex(a));
             }

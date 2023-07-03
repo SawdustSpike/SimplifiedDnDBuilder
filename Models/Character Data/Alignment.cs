@@ -2,6 +2,16 @@
 {
     public class Alignment
     {
+       public readonly static string[] Alignments = new string[] {
+           "chaotic-neutral",
+            "chaotic-evil",
+            "chaotic-good",
+            "lawful-neutral",
+            "lawful-evil",
+            "lawful-good",
+            "neutral",
+            "neutral-evil",
+            "neutral-good"};
         public Alignment(string index, string name, string abbr, string desc, string url)
         {
             Index = index;

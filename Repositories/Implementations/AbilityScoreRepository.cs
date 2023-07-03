@@ -25,9 +25,9 @@ namespace Simple_DnD_Builder.Repositories.Implementations
 
         public List<AbilityScore> GetAllAbilityScores()
         {
-            var scores = new List<string>() { "cha","con","dex","int", "str", "wis"};
+            
             var abilities = new List<AbilityScore>();
-            foreach (var index in scores)
+            foreach (var index in AbilityScore.Abilities)
             {
                 var ability = HttpHelper.Helper("ability-scores", index);
                 var descString = ability["desc"].ToString().Replace("[", "").Replace("]","").Replace("\"", "");
@@ -40,5 +40,6 @@ namespace Simple_DnD_Builder.Repositories.Implementations
             }
             return abilities;
         }
+        
     }
 }

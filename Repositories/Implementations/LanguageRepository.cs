@@ -21,26 +21,8 @@ namespace Simple_DnD_Builder.Repositories.Implementations
         public List<Language> GetAllLanguages()
         {
             var languages = new List<Language>();
-            var langs = new string[]
-            {
-                "abyssal",
-"celestial",
-"common",
-"deep-speech",
-"draconic",
-"dwarvish",
-"elvish",
-"giant",
-"gnomish",
-"goblin",
-"halfling",
-"infernal",
-"orc",
-"primordial",
-"sylvan",
-"undercommon"
-            };
-            foreach ( var lan in langs )
+           
+            foreach ( var lan in Language.Languages )
             {
                 languages.Add(GetLanguageByIndex(lan));
             }

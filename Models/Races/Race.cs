@@ -2,7 +2,20 @@
 {
     public class Race
     {
-        public Race(string name, int speed, string alignment, string age, string size, string sizeDecription, string languageDescription, string url)
+        public static readonly string[] Races = new string[]
+            
+            {
+                "dragonborn",
+"dwarf",
+"elf",
+"gnome",
+"half-elf",
+"half-orc",
+"halfling",
+"human",
+"tiefling"
+            };
+    public Race(string name, int speed, string alignment, string age, string size, string sizeDecription, string languageDescription, string url)
         {
             Name = name;
             Speed = speed;
@@ -13,6 +26,8 @@
             LanguageDescription = languageDescription;
             Url = url;
         }
+     
+    
         public string Name { get; set; }
         public int Speed { get; set; }
         public string Alignment { get; set; }

@@ -2,6 +2,19 @@
 {
     public class CharClass
     {
+        public static readonly string[] Classs = new string[] {
+                "barbarian",
+                "bard",
+                "cleric",
+                "druid",
+                "fighter",
+                "monk",
+                "paladin",
+                "ranger",
+                "rogue",
+                "sorcerer",
+                "warlock",
+                "wizard"};
         public CharClass(string name, int hitDice) 
         {
             Name = name;

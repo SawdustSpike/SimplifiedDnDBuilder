@@ -1,8 +1,8 @@
 ﻿@using Simple_DnD_Builder.Models.Player;
 @model Player
 
-<h2>@Model.PlayerName @Model.Name</h2>
-
+<h2>@Model.PlayerName 's Character @Model.Name</h2>
+<img src="@Model.ImageURL" alt="Your Character" />
 <table class="table">
     <tr>
         <th>Name</th>
@@ -24,7 +24,7 @@
         <td>
             @(Model.CharClass == null ?
                 Html.Raw("<a href='/CharClass/Index'>Choose a Class</a>") :
-                Html.Encode(Model.CharClass))
+                Html.Raw("<a href='/CharClass/Index'>Html.Encode(Model.CharClass)</a>"))
         </td>
 
         <td>
@@ -33,6 +33,14 @@
                 Html.Encode(Model.Alignment))
         </td>
     </tr>
-
+    <div class="row">
+        <div class="col-md-1">CHA = @Model.AbilityScores["cha"]</div>
+        <div class="col-md-1">CON = @Model.AbilityScores["con"]</div>
+        <div class="col-md-1">DEX = @Model.AbilityScores["dex"]</div>
+        <div class="col-md-1">INT = @Model.AbilityScores["int"]</div>
+        <div class="col-md-1">STR = @Model.AbilityScores["str"]</div>
+        <div class="col-md-1">WIS = @Model.AbilityScores["wis"]</div>
+       
+    </div>
 
 </table>

@@ -8,20 +8,8 @@ namespace Simple_DnD_Builder.Repositories.Implementations
     {
         public List<Race> GetAllRaces()
         {
-            var races = new List<Race>();
-            var racs = new string[]
-            {
-                "dragonborn",
-"dwarf",
-"elf",
-"gnome",
-"half-elf",
-"half-orc",
-"halfling",
-"human",
-"tiefling"
-            };
-            foreach (var race in racs)
+            var races = new List<Race>();           
+            foreach (var race in Race.Races)
             {
                 races.Add(GetRaceByIndex(race));
             }

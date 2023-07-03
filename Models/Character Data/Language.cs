@@ -2,6 +2,25 @@
 {
     public class Language
     {
+        public static readonly string[] Languages = new string[]
+           {
+                "abyssal",
+"celestial",
+"common",
+"deep-speech",
+"draconic",
+"dwarvish",
+"elvish",
+"giant",
+"gnomish",
+"goblin",
+"halfling",
+"infernal",
+"orc",
+"primordial",
+"sylvan",
+"undercommon"
+           };
         public Language(string name, string desc, string type)
         {
             Name = name;

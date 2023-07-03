@@ -9,28 +9,8 @@ namespace Simple_DnD_Builder.Repositories.Implementations
         public List<Skill> GetAllSkills()
         {
             var skillList = new List<Skill>();
-            var skills = new string[]
-            {
-"acrobatics",
-"animal-handling",
-"arcana",
-"athletics",
-"deception",
-"history",
-"insight",
-"intimidation",
-"investigation",
-"medicine",
-"nature",
-"perception",
-"performance",
-"persuasion",
-"religion",
-"sleight-of-hand",
-"stealth",
-"survival"
-            };
-            foreach (var skill in skills)
+            
+            foreach (var skill in Skill.Skills)
             {
                 skillList.Add(GetSkillByIndex(skill));
             }

@@ -24,16 +24,8 @@ namespace Simple_DnD_Builder.Repositories.Implementations
         public List<Alignment> GetAllAlignments()
         {
             var alignments = new List<Alignment>();
-            var alis = new string[] {"chaotic-neutral",
-            "chaotic-evil",
-            "chaotic-good",
-            "lawful-neutral",
-            "lawful-evil",
-            "lawful-good",
-            "neutral",
-            "neutral-evil",
-            "neutral-good"};
-            foreach (var a in alis)
+           
+            foreach (var a in Alignment.Alignments)
             {
                 alignments.Add(GetAlignmentByIndex(a));
             }
