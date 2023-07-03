@@ -1,4 +1,4 @@
-﻿namespace Simple_DnD_Builder.Models.Player
+﻿namespace Simple_DnD_Builder.Models.Players
 {
     public class PlayerHelper
     {
