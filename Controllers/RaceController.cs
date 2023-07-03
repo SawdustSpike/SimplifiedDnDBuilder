@@ -24,5 +24,10 @@ namespace Simple_DnD_Builder.Controllers
             Player.Players[0].Race = selectedRace;
             return RedirectToAction("ViewPlayer", "Player", Player.Players[0]);
         }
+        public IActionResult ViewRace(string index)
+        {
+            var race = _repo.GetRaceByIndex(index.ToLower());
+            return View(race);
+        }
     }
 }
