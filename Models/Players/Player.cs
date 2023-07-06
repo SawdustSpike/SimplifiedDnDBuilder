@@ -1,8 +1,4 @@
-﻿using Simple_DnD_Builder.Models.Character_Data;
-using Simple_DnD_Builder.Models.Class;
-using Simple_DnD_Builder.Models.Races;
-
-namespace Simple_DnD_Builder.Models.Players
+﻿namespace Simple_DnD_Builder.Models.Players
 {
     public class Player
     {

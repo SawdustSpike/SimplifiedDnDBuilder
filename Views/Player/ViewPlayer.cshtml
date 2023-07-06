@@ -26,7 +26,7 @@
         <td>
             @(Model.CharClass == null ?
             Html.Raw("<a href='/CharClass/Index'>Choose a Class</a>") :
-            Html.Raw("<a href='/CharClass/Index'>Html.Encode(Model.CharClass)</a>"))
+            Html.Encode(Model.CharClass))
         </td>
 
         <td>
@@ -38,25 +38,34 @@
 </table>
     <h4>Abilty Scores</h4>
     <div class="row">
-        <div class="col-md-1">CHA = @Model.AbilityScores["cha"]</div>
-        <div class="col-md-1">CON = @Model.AbilityScores["con"]</div>
-        <div class="col-md-1">DEX = @Model.AbilityScores["dex"]</div>
+    <div class="col-md-1"><a href="/AbilityScore/ViewAbilityScore?index=cha"> CHA = @Model.AbilityScores["cha"]</a></div>
+    <div class="col-md-1"><a href="/AbilityScore/ViewAbilityScore?index=con">CON = @Model.AbilityScores["con"]</a></div>
+    <div class="col-md-1"><a href="/AbilityScore/ViewAbilityScore?index=dex">DEX = @Model.AbilityScores["dex"]</a></div>
     </div>
     <div class="row">
-        <div class="col-md-1">INT = @Model.AbilityScores["int"]</div>
-        <div class="col-md-1">STR = @Model.AbilityScores["str"]</div>
-        <div class="col-md-1">WIS = @Model.AbilityScores["wis"]</div>
+    <div class="col-md-1"><a href="/AbilityScore/ViewAbilityScore?index=int">INT = @Model.AbilityScores["int"]</a></div>
+    <div class="col-md-1"><a href="/AbilityScore/ViewAbilityScore?index=str">STR = @Model.AbilityScores["str"]</a></div>
+    <div class="col-md-1"><a href="/AbilityScore/ViewAbilityScore?index=wis">WIS = @Model.AbilityScores["wis"]</a></div>
     </div>
     <h4>Skill Scores</h4>
-   
+@for(int j = 0; j < 3; j++)
+{
     <div class="row">
-        <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
+    @for (int i = 0; i < 6; i++)
+    {
+            <div class="col-md-1"><a href="/skill/index?index=@Skill.Skills[counter]">@Skill.Skills[@counter].Replace('-', ' ')</a> <br />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
+    }
+    </div>
+}
+
+       
+    @*
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>                
-    </div>
+   
      <div class="row">
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br  />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
@@ -72,5 +81,5 @@
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
         <div class="col-md-1">@Skill.Skills[@counter].Replace('-', ' ') <br />------------<br /> @Model.SkillScores[@Skill.Skills[@counter++]]</div>
-    </div>
+    </div>*@
     

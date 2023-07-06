@@ -1,0 +1,22 @@
+﻿@model Skill
+
+<h2>@Model.Name</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>        
+        <th>Description</th>
+        <th>Ability this skill is based on</th>
+
+    </tr>
+
+
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.Desc</td>
+        <td><a href="/AbilityScore/ViewAbilityScore?index=@Model.Ability">@Model.Ability.ToUpper()</a></td>
+
+    </tr>
+
+
+</table>
