@@ -2,10 +2,12 @@
 @model List<Race>
 
 <h2>Choose a Race</h2>
+<p>Click race name for more information</p>
 @using (Html.BeginForm("AddRace", "Race", FormMethod.Post))
 {
     <table class="table">
         <tr>
+            <th>Choose a Race</th>
             <th>Name</th>
             <th>Speed</th>
             <th>Alignment</th>
@@ -16,12 +18,13 @@
         @foreach (var race in Model)
         {
             <tr>
+                <td><input type="radio" name="selectedRace" value="@race.Name"></td>
                 <td><a href="/Race/ViewRace?index=@race.Name">@race.Name</a></td>
                 <td>@race.Speed</td>
                 <td>@race.Alignment</td>
                 <td>@race.Age</td>
                 <td>@race.Size</td>
-                <td><input type="radio" name="selectedRace" value="@race.Name"></td>
+               
             </tr>
         }
     </table>
