@@ -26,7 +26,7 @@ namespace Simple_DnD_Builder.Controllers
         public IActionResult PlayerCreator()
         {
             PlayerHelper.PlayerPurger();
-            return View(new Player());
+            return Player.Players.Count == 0? View(new Player()): View(Player.Players[0]);
 
         }
         public IActionResult CreatePlayer(Player player)

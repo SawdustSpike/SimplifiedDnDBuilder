@@ -24,6 +24,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJpbGl0eVNjb3JlXFZpZXdBYmlsaXR5U2NvcmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/spike/source/repos new/Simple DnD Builder/Views/Alignment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpZ25tZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/spike/source/repos new/Simple DnD Builder/Views/Alignment/ViewAlignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpZ25tZW50XFZpZXdBbGlnbm1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/spike/source/repos new/Simple DnD Builder/Views/CharClass/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhckNsYXNzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/spike/source/repos new/Simple DnD Builder/Views/CharClass/ViewCharClass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhckNsYXNzXFZpZXdDaGFyQ2xhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/spike/source/repos new/Simple DnD Builder/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,12 +68,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/spike/source/repos new/Simple DnD Builder/Views/Race/ViewRace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZVxWaWV3UmFjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/spike/source/repos new/Simple DnD Builder/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/spike/source/repos new/Simple DnD Builder/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/spike/source/repos new/Simple DnD Builder/Views/Skill/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tpbGxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/spike/source/repos new/Simple DnD Builder/Views/_ViewImports.cshtml]

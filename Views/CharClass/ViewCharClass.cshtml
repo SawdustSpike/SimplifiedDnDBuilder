@@ -1,0 +1,24 @@
+﻿@using Simple_DnD_Builder.Models.CharClass;
+@model CharClass
+
+<h2>@Model.Name</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Hit Dice</th>
+    </tr>
+
+
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.HitDice </td>  
+    </tr>
+    <h2>Saving Throws</h2>
+    @foreach(var abil in Model.SavingThrows)
+    {
+        <td><a href="/AbilityScore/ViewAbilityScore?index=@abil">@abil.ToUpper()</a></td>
+    }
+    @Html.ActionLink("Go Back", "Index", "CharClass", null, new { @class = "btn btn-primary" })
+
+</table>

@@ -1,0 +1,26 @@
+﻿
+@using Simple_DnD_Builder.Models.CharClass;
+@model List<CharClass>
+
+<h2>Choose a Class</h2>
+@using (Html.BeginForm("AddCharClass", "CharClass", FormMethod.Post))
+{
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Hit Dice</th>
+            
+        </tr>
+
+        @foreach (var CharClass in Model)
+        {
+            <tr>
+                <td><a href="/CharClass/ViewCharClass?index=@CharClass.Name">@CharClass.Name</a></td>
+                <td>@CharClass.HitDice</td>
+                
+                <td><input type="radio" name="selectedCharClass" value="@CharClass.Name"></td>
+            </tr>
+        }
+    </table>
+    <button type="submit">Add Selected Class</button>
+}

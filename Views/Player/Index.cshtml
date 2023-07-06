@@ -15,9 +15,9 @@
 
     <tr>
         <td>@Model.Name</a></td>
-        <td>@(@Model.Race.Name.Length == 0) ? <a href=/Race/Index />Choose a Race</a> : @Model.Race</td>
-        <td>@(@Model.CharClass.Name.Length == 0) ? <a href=/CharClass/Index />Choose a Class</a> : @Model.CharClass</td>
-        <td>@(@Model.Alignment.Name.Length == 0) ? <a href=/Alignment/Index />Choose an Alignment</a> : @Model.Race</td>        
+        <td>@(@Model.Race.Length == 0) ? <a href=/Race/Index />Choose a Race</a> : @Model.Race</td>
+        <td>@(@Model.CharClass.Length == 0) ? <a href=/CharClass/Index />Choose a Class</a> : @Model.CharClass</td>
+        <td>@(@Model.Alignment.Length == 0) ? <a href=/Alignment/Index />Choose an Alignment</a> : @Model.Race</td>        
     </tr>
 
 

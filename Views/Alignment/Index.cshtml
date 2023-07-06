@@ -1,0 +1,28 @@
+﻿@using Simple_DnD_Builder.Models.Character_Data;
+@model List<Alignment>
+
+<h2>Choose a Alignment</h2>
+@using (Html.BeginForm("AddAlignment", "Alignment", FormMethod.Post))
+{
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>abbr</th>
+            <th>Desciption</th>
+            <th>Age</th>
+            <th>Size</th>
+        </tr>
+
+        @foreach (var Alignment in Model)
+        {
+            <tr>
+                <td><a href="/Alignment/ViewAlignment?index=@Alignment.Index">@Alignment.Name</a></td>
+                <td>@Alignment.Abbr</td>
+                <td>@Alignment.Desc</td>
+               
+                <td><input type="radio" name="selectedAlignment" value="@Alignment.Name"></td>
+            </tr>
+        }
+    </table>
+    <button type="submit">Add Selected Alignment</button>
+}

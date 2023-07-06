@@ -19,7 +19,7 @@ namespace Simple_DnD_Builder.Repositories.Implementations
 
         public Skill GetSkillByIndex(string index)
         {
-            var repo = new AbilityScoreRepository();
+           
             var skill = HttpHelper.Helper("skills", index);
             var descString = skill["desc"]?.ToString().Replace("[", "").Replace("]", "").Replace("\"", "") ?? "None";
             // JProperty abilityScoreProperty = skill.Property("ability_score");
@@ -27,7 +27,7 @@ namespace Simple_DnD_Builder.Repositories.Implementations
             return new Skill(
                 skill["name"]?.ToString() ?? "None",
                 descString,
-                repo.GetAbilityScoreByIndex(skill["ability_score"]["index"].ToString())
+                skill["ability_score"]["index"].ToString()
             );
 
         }

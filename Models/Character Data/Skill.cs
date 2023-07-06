@@ -27,7 +27,7 @@ namespace Simple_DnD_Builder.Models
 "survival"
             
     };
-        public Skill(string name, string desc, AbilityScore ability)
+        public Skill(string name, string desc, string ability)
         {
             Name = name;
             Desc = desc;
@@ -40,7 +40,7 @@ namespace Simple_DnD_Builder.Models
         }
         public string Name { get; set; }
         public string Desc { get; set; }
-        public AbilityScore Ability { get; set; }
+        public string Ability { get; set; }
 
        
     }
