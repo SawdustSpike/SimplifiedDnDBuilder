@@ -47,8 +47,8 @@ namespace Simple_DnD_Builder.Controllers
                     player.ImageURL = "https://pbs.twimg.com/media/Ec5pwCeXgAIEdcF.jpg";
                     break;
             }
-            AbilityHelper.AbilityAdder(player);
-            SkillHelper.SkillsAdder(player);
+            //AbilityHelper.AbilityAdder(player);
+            //SkillHelper.SkillsAdder(player);
             Player.Players.Add(player);
             PlayerHelper.PlayerPurger();
             return RedirectToAction("ViewPlayer");

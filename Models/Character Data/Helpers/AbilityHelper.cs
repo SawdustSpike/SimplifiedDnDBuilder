@@ -4,13 +4,14 @@ namespace Simple_DnD_Builder.Models.Character_Data.Helpers
 {
     public class AbilityHelper
     {
-        public static void AbilityAdder(Player player)
+        public static Dictionary<string, int> AbilityAdder()
         {
+            var abilityScores = new Dictionary<string, int>();
             foreach(var ability in AbilityScore.Abilities)
             {
-                player.AbilityScores[ability] = 10;
+                abilityScores[ability] = 10;
             }
-            
+            return abilityScores;
         }
     }
 }

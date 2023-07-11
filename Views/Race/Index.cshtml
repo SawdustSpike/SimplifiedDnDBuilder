@@ -18,7 +18,7 @@
         @foreach (var race in Model)
         {
             <tr>
-                <td><input type="radio" name="selectedRace" value="@race.Name"></td>
+                <td><input type="radio" name="selectedRace" value="@race.Name.ToLower()"></td>
                 <td><a href="/Race/ViewRace?index=@race.Name">@race.Name</a></td>
                 <td>@race.Speed</td>
                 <td>@race.Alignment</td>

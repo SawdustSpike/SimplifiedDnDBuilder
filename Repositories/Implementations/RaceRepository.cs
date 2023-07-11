@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json.Linq;
+using Simple_DnD_Builder.Models.Players;
 using Simple_DnD_Builder.Models.Races;
 using Simple_DnD_Builder.Repositories.Interfaces;
+using System;
 
 namespace Simple_DnD_Builder.Repositories.Implementations
 {
@@ -30,6 +32,24 @@ namespace Simple_DnD_Builder.Repositories.Implementations
                 race["url"]?.ToString() ?? "None"
                 );
 
+        }
+        public void IncreasePlayerAbilityScore(Player player, string index)
+        {           
+            var race = HttpHelper.Helper("races", index);
+            JArray scores = (JArray)race["ability_bonuses"];
+            foreach (var score in scores)
+            {
+                player.AbilityScores[score["ability_score"]["index"].ToString()] += (int)score["bonus"];
+            }
+        }
+        public void DecreasePlayerAbilityScore(Player player)
+        {
+            var race = HttpHelper.Helper("races", player.Race);
+            JArray scores = (JArray)race["ability_bonuses"];
+            foreach (var score in scores)
+            {
+                player.AbilityScores[score["ability_score"]["index"].ToString()] -= (int)score["bonus"];
+            }
         }
     }
 }

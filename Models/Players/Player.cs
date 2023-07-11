@@ -1,12 +1,17 @@
-﻿namespace Simple_DnD_Builder.Models.Players
+﻿using Simple_DnD_Builder.Models.Character_Data.Helpers;
+using System.Numerics;
+
+namespace Simple_DnD_Builder.Models.Players
 {
     public class Player
     {
         public static List<Player> Players = new List<Player>();
         public Player()
         {
-          
+            this.AbilityScores= AbilityHelper.AbilityAdder();
+            this.SkillScores = SkillHelper.SkillsAdder();
         }
+        public enum stanardArray:int {eight = 8, ten = 10, twelve = 12, thirteen = 13, fourteen = 14 , fifteen = 15};
         public string Name { get; set; }
         public string PlayerName { get; set; }
         public string Gender { get; set; }

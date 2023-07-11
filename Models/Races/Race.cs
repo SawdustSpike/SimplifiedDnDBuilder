@@ -6,14 +6,14 @@
             
             {
                 "dragonborn",
-"dwarf",
-"elf",
-"gnome",
-"half-elf",
-"half-orc",
-"halfling",
-"human",
-"tiefling"
+                "dwarf",
+                "elf",
+                "gnome",
+                "half-elf",
+                "half-orc",
+                "halfling",
+                "human",
+                "tiefling"
             };
     public Race(string name, int speed, string alignment, string age, string size, string sizeDecription, string languageDescription, string url)
         {

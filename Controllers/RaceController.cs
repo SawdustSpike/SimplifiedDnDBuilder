@@ -2,6 +2,7 @@
 using Simple_DnD_Builder.Models.Players;
 using Simple_DnD_Builder.Models.Races;
 using Simple_DnD_Builder.Repositories.Interfaces;
+using System.Numerics;
 
 namespace Simple_DnD_Builder.Controllers
 {
@@ -21,6 +22,8 @@ namespace Simple_DnD_Builder.Controllers
         [HttpPost]
         public IActionResult AddRace(string selectedRace)
         {
+            if (Player.Players[0].Race != null) _repo.DecreasePlayerAbilityScore(Player.Players[0]);
+            _repo.IncreasePlayerAbilityScore(Player.Players[0], selectedRace);        
             Player.Players[0].Race = selectedRace;
             return RedirectToAction("ViewPlayer", "Player", Player.Players[0]);
         }
